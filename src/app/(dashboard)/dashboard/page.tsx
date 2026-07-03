@@ -191,7 +191,7 @@ export default function DashboardPage() {
                           color: "#e2e8f0",
                           fontSize: "13px",
                         }}
-                        formatter={(value: number) => [`৳${value.toLocaleString()}`, "Sales"]}
+                        formatter={(value: any) => [`৳${Number(value).toLocaleString()}`, "Sales"]}
                       />
                       <Area
                         type="monotone"
@@ -229,7 +229,7 @@ export default function DashboardPage() {
                           color: "#e2e8f0",
                           fontSize: "13px",
                         }}
-                        formatter={(value: number) => [`৳${value.toLocaleString()}`, "Sales"]}
+                        formatter={(value: any) => [`৳${Number(value).toLocaleString()}`, "Sales"]}
                       />
                       <Bar
                         dataKey="sales"
@@ -280,7 +280,7 @@ export default function DashboardPage() {
                     color: "#e2e8f0",
                     fontSize: "13px",
                   }}
-                  formatter={(value: number) => [`${value}%`, "Share"]}
+                  formatter={(value: any) => [`${value}%`, "Share"]}
                 />
               </PieChart>
             </ResponsiveContainer>
