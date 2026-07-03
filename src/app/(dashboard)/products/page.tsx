@@ -88,8 +88,8 @@ export default function ProductsPage() {
     setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
-  const handleSelectChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
+  const handleSelectChange = (field: string, value: string | null) => {
+    setFormData((prev) => ({ ...prev, [field]: value || "" }));
   };
 
   const openAddDialog = () => {

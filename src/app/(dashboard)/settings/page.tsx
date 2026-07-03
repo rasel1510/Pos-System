@@ -255,7 +255,7 @@ export default function SettingsPage() {
             </div>
             <Separator className="bg-slate-300 my-3" />
             <div className="text-center text-[10px] text-slate-600 italic">
-              {businessSettings.receiptFooter}
+              {settings.receiptFooter}
             </div>
           </CardContent>
         </Card>
